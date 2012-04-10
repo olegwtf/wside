@@ -5,14 +5,17 @@
 #-------------------------------------------------
 
 QT       += core gui
+LIBS     += -lqscintilla2
 
 TARGET = wside
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    sourceeditor.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    sourceeditor.h
 
 FORMS    += mainwindow.ui
