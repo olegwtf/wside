@@ -2,6 +2,8 @@
 #define WEBVIEWERPANEL_H
 
 #include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QToolButton>
 #include <QToolBar>
 #include <QComboBox>
 #include <QLineEdit>
@@ -20,10 +22,15 @@ public:
 protected:
     WebViewer *m_viewer;
     QComboBox *m_urlEdit;
+    QToolButton *m_actButton;
 
 protected slots:
     void changeUrlEdit(const QUrl &newUrl);
     void loadUrl(QString url);
+    void loadUrl(const QUrl &url);
+    void startLoading();
+    void setActButtonStop();
+    void setActButtonStart();
 };
 
 #endif // WEBVIEWERPANEL_H

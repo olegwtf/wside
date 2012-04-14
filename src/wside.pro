@@ -25,3 +25,6 @@ HEADERS  += mainwindow.h \
     webviewerpanel.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    img.qrc
