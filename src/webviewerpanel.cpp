@@ -11,3 +11,8 @@ WebViewerPanel::WebViewerPanel(QWidget *parent) :
     m_viewer = new WebViewer;
     layout->addWidget(m_viewer);
 }
+
+WebViewer *WebViewerPanel::viewer()
+{
+    return m_viewer;
+}

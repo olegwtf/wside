@@ -10,6 +10,7 @@ class WebViewerPanel : public QWidget
     Q_OBJECT
 public:
     explicit WebViewerPanel(QWidget *parent = 0);
+    WebViewer *viewer();
 
 protected:
     WebViewer *m_viewer;

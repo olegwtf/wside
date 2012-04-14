@@ -11,3 +11,8 @@ SourceEditorPanel::SourceEditorPanel(QWidget *parent) :
     m_editor = new SourceEditor;
     layout->addWidget(m_editor);
 }
+
+SourceEditor *SourceEditorPanel::editor()
+{
+    return m_editor;
+}
