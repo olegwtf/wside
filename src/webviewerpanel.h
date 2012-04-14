@@ -3,7 +3,12 @@
 
 #include <QVBoxLayout>
 #include <QToolBar>
+#include <QComboBox>
+#include <QLineEdit>
+#include <QRegExp>
 #include "webviewer.h"
+
+#include <QDebug>
 
 class WebViewerPanel : public QWidget
 {
@@ -14,6 +19,11 @@ public:
 
 protected:
     WebViewer *m_viewer;
+    QComboBox *m_urlEdit;
+
+protected slots:
+    void changeUrlEdit(const QUrl &newUrl);
+    void loadUrl(QString url);
 };
 
 #endif // WEBVIEWERPANEL_H

@@ -7,7 +7,7 @@ SourceEditor::SourceEditor(QWidget *parent) :
     setAutoIndent(true);
     setMarginLineNumbers(NumberMargin, true);
     setMarginWidth(NumberMargin, "3 ");
-    setBraceMatching(StrictBraceMatch);
+    setBraceMatching(SloppyBraceMatch);
     setUtf8(true);
 
     m_marginWidth = 1;

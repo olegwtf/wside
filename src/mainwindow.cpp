@@ -16,6 +16,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     m_webViwerPanel = new WebViewerPanel;
     m_splitter->addWidget(m_webViwerPanel);
+
+    QList<int> sizes;
+    sizes.append(width() / 2.5);
+    sizes.append(width() - sizes[0]);
+    m_splitter->setSizes(sizes);
 }
 
 MainWindow::~MainWindow()
