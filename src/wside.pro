@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui webkit
 LIBS     += -lqscintilla2
 
 TARGET = wside
@@ -13,9 +13,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    sourceeditor.cpp
+    sourceeditor.cpp \
+    webviewer.cpp \
+    sourceeditorpanel.cpp \
+    webviewerpanel.cpp
 
 HEADERS  += mainwindow.h \
-    sourceeditor.h
+    sourceeditor.h \
+    webviewer.h \
+    sourceeditorpanel.h \
+    webviewerpanel.h
 
 FORMS    += mainwindow.ui

@@ -1,6 +1,6 @@
 #include "sourceeditor.h"
 
-SourceEditor::SourceEditor(QsciScintilla *parent) :
+SourceEditor::SourceEditor(QWidget *parent) :
     QsciScintilla(parent)
 {
     setLexer(new QsciLexerPerl(this)); // only Perl for now :(
@@ -17,9 +17,6 @@ SourceEditor::SourceEditor(QsciScintilla *parent) :
 void SourceEditor::linesCountChanged()
 {
     int marginWidth = qCeil( qLn( lines() ) / qLn(10) + 0.000001 );
-    if (marginWidth == 0) {
-        marginWidth++;
-    }
 
     if (marginWidth != m_marginWidth) {
         m_marginWidth = marginWidth;

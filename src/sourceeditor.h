@@ -11,7 +11,7 @@ class SourceEditor : public QsciScintilla
 {
     Q_OBJECT
 public:
-    explicit SourceEditor(QsciScintilla *parent = 0);
+    explicit SourceEditor(QWidget *parent = 0);
 
 protected:
     int m_marginWidth;

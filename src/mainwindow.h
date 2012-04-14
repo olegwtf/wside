@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "sourceeditor.h"
+#include "sourceeditorpanel.h"
+#include "webviewerpanel.h"
 
 namespace Ui {
     class MainWindow;
